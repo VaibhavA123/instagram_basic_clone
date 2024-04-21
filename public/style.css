@@ -1,0 +1,131 @@
+.outer{
+    height : 35rem;
+    width : 500px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 1rem;
+    padding : 1rem;
+    border-bottom: 1px solid grey;
+}
+
+.inner {
+    height : 70%;
+    width : 80%;
+    margin-left: 3rem;
+    margin-top:2.7rem ;
+    background-color: pink;
+}
+
+.outer .text {
+    height: 100%;
+    width : 50%;
+    background-color: inherit;
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 1.9rem;
+}
+img {
+    height : 100%;
+    width : 100%;
+}
+.container{
+    height : 100vh;
+    width : 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap : 1rem;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: white white;
+    margin-left : 6rem;
+    display: inline-block;
+    margin-top: 5rem;
+}
+
+.nav{
+    height: 100vh;
+    width : 15rem;
+    background-color: rgb(255, 255, 255);
+    display: inline-block;
+    float : left;
+    border-right: 0.5px solid grey;
+}
+.nav h1 {
+    font-style: italic;
+}
+body {
+    position: fixed;
+}
+.icon{
+    font-size: 1.4rem;
+}
+
+.header{
+    height : 3rem;
+background-color: rgb(255, 255, 255);
+display: flex;
+align-items: center;
+padding-left: 1rem;
+border-top: 1px solid black;
+}
+
+.nav2{
+    height : 35rem;
+    width : 18rem;
+    display: inline-block;
+    float: right;
+    margin-left: 25rem;
+}
+
+.nav2 ul {
+    font-size: 1.4rem;
+    border-right: 1px solid black;
+}
+.story {
+    display: inline-block;
+    height : 5rem;
+    width : 55rem;
+    margin-left: 5rem;
+    margin-bottom: 49rem;
+    position: fixed;
+    box-sizing: border-box;
+    z-index: 1;
+    /* display: flex; */
+}
+.one {
+    height : 4rem;
+    width : 4rem;
+    border-radius: 50%;
+    background-color: white;
+    display: inline-block;
+    margin-left: 1.3rem;
+    border : 3px solid rgb(59, 5, 59);
+}
+.story img {
+    border-radius: 50%;
+}
+
+.photo{
+    height : 5rem;
+    width : 15rem;
+    display: flex;
+}
+.div{
+    height : 4rem;
+    width: 4rem;
+    background-color: azure;
+    border-radius: 50%;
+}
+.div img{
+    border-radius: 50%;
+}
+.a{
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+}

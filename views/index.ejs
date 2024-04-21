@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="super">
+    <div class="story">
+        <div class="one"><img src="https://www.hindustantimes.com/ht-img/img/2023/12/31/550x309/Social-Media-Kids-Ad-Revenue-0_1704009233030_1704009303459.jpg" alt="image">Vai.994</div>
+        <div class="one"><img src="https://www.iwmbuzz.com/wp-content/uploads/2022/08/auto-draft-4641-920x518.jpg" alt="image">sp4rsh_02</div>
+        <div class="one"><img src="https://media.dev.to/cdn-cgi/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fi%2Fmtdm70a9l1qesnhpe667.jpg" alt="image">singha_10</div>
+        <div class="one"><img src="https://contentstatic.techgig.com/photo/89154697/instagrams-new-feature-to-display-users-upcoming-live-streams.jpg?5944" alt="image">nirbhay_sh</div>
+        <div class="one"><img src="https://www.hindustantimes.com/ht-img/img/2023/12/31/550x309/Social-Media-Kids-Ad-Revenue-0_1704009233030_1704009303459.jpg" alt="image">hey_its.ma</div>
+        <div class="one"><img src="https://contentstatic.techgig.com/photo/89154697/instagrams-new-feature-to-display-users-upcoming-live-streams.jpg?5944" alt="image">chandranshi</div>
+        <div class="one"><img src="https://www.hindustantimes.com/ht-img/img/2023/12/31/550x309/Social-Media-Kids-Ad-Revenue-0_1704009233030_1704009303459.jpg" alt="image">ria_m</div>
+        <div class="one"><img src="https://contentstatic.techgig.com/photo/89154697/instagrams-new-feature-to-display-users-upcoming-live-streams.jpg?5944" alt="image">vansh_12</div>
+    </div>
+        <div class="nav">
+        <h1>Instagram</h1>
+        <br>
+        <br>
+        <br>
+        <div class="icon"><i class="fa-solid fa-house"></i> &nbsp;&nbsp;&nbsp;&nbsp;Home</div>
+        <br>
+        <br>
+        <br>
+        <div class="icon"><i class="fa-solid fa-magnifying-glass"></i>&nbsp;&nbsp;&nbsp;&nbsp;Search</div>
+        <br>
+        <br>
+        <br>
+        <div class="icon"><i class="fa-solid fa-compass"></i>&nbsp;&nbsp;&nbsp;&nbsp;Explore</div>
+        <br>
+        <br>
+        <br>
+        <div class="icon"><i class="fa-regular fa-file-video"></i>&nbsp;&nbsp;&nbsp;&nbsp;Reels</div>
+        <br>
+        <br>
+        <br>
+        <div class="icon"><i class="fa-solid fa-message"></i>&nbsp;&nbsp;&nbsp;&nbsp;Message</div>
+        <br><br><br>
+        <div class="icon"><i class="fa-regular fa-heart"></i>&nbsp;&nbsp;&nbsp;&nbsp;Notifications</div>
+        <br><br><br>
+        <div class="icon"><i class="fa-regular fa-square-plus"></i>&nbsp;&nbsp;&nbsp;&nbsp;Create</div>
+        <br>
+        <a href="/instagram/create" style="font-size: 1.2rem;">Create new post</a>
+    </div>
+    <div class="container">
+    <% for(post of details) { %>
+        <div class="outer">
+            <div class="header"><i class="fa-brands fa-instagram"></i> &nbsp;&nbsp;<h2><%=  post.username  %></h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp  <form method="post" action="/instagram/<%= post.id %>?_method=DELETE">
+                <button>delete</button>
+            </form>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/instagram/<%= post.id %>">edit</a></div>
+            <div class="inner">
+                <img src="<%= post.img %>"" alt="image">
+                </div>
+            <div class="text">
+                <p><i class="fa-regular fa-heart"></i><%=post.likes %> &nbsp;&nbsp; <i class="fa-regular fa-comment"></i> <%=post.comments  %>&nbsp;&nbsp;  <i class="fa-solid fa-share"></i> <%=post.share  %> &nbsp;&nbsp;&nbsp;Liked by vai.994</p>
+            </div>
+        </div>
+        <% } %>
+    </div>
+    <div class="nav2">
+        <ul>
+            <p><i class="fa-regular fa-user"></i> &nbsp;&nbsp;vai.994</p>
+            <h2 style="color: rgb(164, 160, 160);">Suggested for you</h2>
+            <div class="photo"><div class="div"><img src="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg" alt="image"></div><div class="a">arpan_khurana</div></div><br>
+            <div class="photo"><div class="div"><img src="https://img.freepik.com/free-photo/waist-up-portrait-handsome-serious-unshaven-male-keeps-hands-together-dressed-dark-blue-shirt-has-talk-with-interlocutor-stands-against-white-wall-self-confident-man-freelancer_273609-16320.jpg?size=626&ext=jpg&ga=GA1.1.553209589.1713571200&semt=sph" alt="image"></div><div class="a">div_yaguptaa</div></div><br>
+            <div class="photo"><div class="div"><img src="https://cdn.pixabay.com/photo/2018/10/29/21/46/human-3782189_640.jpg" alt="image"></div><div class="a">peakmanactivities</div></div><br>
+            <div class="photo"><div class="div"><img src="https://img.freepik.com/free-photo/young-beautiful-woman-pink-warm-sweater-natural-look-smiling-portrait-isolated-long-hair_285396-896.jpg?size=626&ext=jpg&ga=GA1.1.1224184972.1713571200&semt=sph" alt="image"></div><div class="a">avisoni</div></div><br>
+            <div class="photo"><div class="div"><img src="https://cdn.pixabay.com/photo/2018/11/08/00/03/human-evolution-3801547_640.jpg" alt="image"></div><div class="a">unfunnynaman5</div></div>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
